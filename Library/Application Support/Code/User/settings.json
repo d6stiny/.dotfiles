@@ -1,0 +1,83 @@
+{
+  "telemetry.telemetryLevel": "off", // Disable telemetry
+
+  // UI
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Vesper",
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.showTabs": false,
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
+
+  // Editor
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.linkedEditing": true,
+
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // Explorer
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "github.gitProtocol": "ssh",
+  "git.enableCommitSigning": true,
+
+  // Inlay Hints
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+
+  // Vim
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.vimrc",
+  "vim.useSystemClipboard": true,
+  "vim.smartRelativeLine": true,
+
+  "discord.detailsDebugging": "{dir_name}/{file_name}",
+  "discord.detailsEditing": "{dir_name}/{file_name}",
+  "discord.lowerDetailsDebugging": "Line {current_line}/{total_lines} | {file_size}",
+  "discord.lowerDetailsEditing": "Line {current_line}/{total_lines} | {file_size}",
+  "discord.detailsIdling": "Thinking...",
+  "workbench.layoutControl.enabled": false
+}

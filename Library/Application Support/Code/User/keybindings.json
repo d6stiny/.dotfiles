@@ -1,0 +1,19 @@
+[
+  {
+    "key": "cmd+t", // CMD + T
+    "command": "workbench.action.terminal.toggleTerminal" // Toggle Terminal
+  },
+  {
+    "key": "cmd+t", // CMD + T
+    "command": "workbench.action.terminal.focus", // Focus Terminal
+    "when": "!terminalFocus" // When Terminal Not Focus
+  },
+  {
+    "key": "cmd+g", // CMD + G
+    "command": "workbench.view.scm" // Source Control
+  },
+  {
+    "key": "cmd+k cmd+e", // CMD + K + E
+    "command": "workbench.view.explorer" // Explorer
+  }
+]
