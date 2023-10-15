@@ -1,0 +1,66 @@
+#!/usr/bin/env sh
+
+# global settings
+yabai -m config mouse_follows_focus          on
+yabai -m config window_placement             second_child
+yabai -m config window_topmost               off
+yabai -m config window_opacity               off
+yabai -m config window_border                off
+yabai -m config window_shadow                on
+yabai -m config active_window_border_color   0xff008bff
+yabai -m config normal_window_border_color   0x01000000
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        1.0
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 off
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+
+# general space settings
+yabai -m config layout                       bsp
+yabai -m config top_padding                  8
+yabai -m config bottom_padding               8
+yabai -m config left_padding                 8
+yabai -m config right_padding                8
+yabai -m config window_gap                   8
+yabai -m config external_bar main:0:0
+
+# space 1: web
+yabai -m space 1 --label web
+yabai -m rule --add app="Safari" space=web
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension|Profile)s|AutoFill|Se(arch|curity)|Developer|Privacy|Advanced|Web Inspector(.*)?)$" manage=off
+yabai -m rule --add app="Arc" space=web
+
+# space 2: development
+yabai -m space 2 --label development
+yabai -m rule --add app="iTerm2" space=development
+yabai -m rule --add app="Xcode" space=development
+yabai -m rule --add app="Docker" space=development
+
+# space 3: productivity
+yabai -m space 3 --layout stack --label productivity
+yabai -m rule --add app="Mail" space=productivity
+yabai -m rule --add app="Calendar" space=productivity
+yabai -m rule --add app="Notes" space=productivity
+yabai -m rule --add app="Reminders" space=productivity
+yabai -m rule --add app="Microsoft Word" space=productivity
+yabai -m rule --add app="Microsoft Excel" space=productivity
+yabai -m rule --add app="Microsoft PowerPoint" space=productivity
+yabai -m rule --add app="Parallels Desktop" space=productivity
+yabai -m rule --add app="Parallels Desktop" title="Control Center" space=productivity manage=off
+yabai -m rule --add app="UTM" space=productivity
+
+# space 4: music
+yabai -m space 4 --label music
+yabai -m rule --add app="Spotify" space=music
+yabai -m rule --add app="Music" space=music
+
+# space 5: out of the way
+yabai -m space 5 --layout stack --label others
+yabai -m rule --add app="Discord" space=others
+yabai -m rule --add app="Steam" space=others
+
+# things that create floating children
+yabai -m rule --add app="^(Calculator|Find My|Finder|Disk Utility|System Preferences|System Information|coconutBattery|System Settings|Software Update|Dictionary|Photo Booth|FaceTime|Messages|Archive Utility|App Store|Raycast|Preview|Activity Monitor|Logitech G HUB|Amphetamine|eul)$" manage=off
+
+echo "yabai config loaded..."
