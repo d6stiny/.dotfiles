@@ -1,0 +1,42 @@
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "oven-sh/bun"
+tap "jesseduffield/lazygit"
+tap "teamookla/speedtest"
+
+brew "bat"
+brew "bun"
+brew "btop"
+brew "fd"
+brew "fzf"
+brew "gh"
+brew "lazygit"
+brew "mas"
+brew "nvm"
+brew "speedtest"
+brew "mods"
+brew "starship"
+brew "tmux"
+brew "tpm"
+
+cask "adguard"
+cask "aldente"
+cask "arc"
+cask "cleanmymac"
+cask "discord"
+cask "docker"
+cask "gpg-suite"
+cask "logitech-g-hub"
+cask "raycast"
+cask "steam"
+cask "warp"
+cask "zed"
+
+cask "font-jetbrains-mono"
+cask "font-maple"
+cask "font-monaspace"
+cask "font-monocraft"
+
+mas "Command X", id: 6448461551
+mas "TestFlight", id: 899247664
+mas "Structured", id: 1499198946

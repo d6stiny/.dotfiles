@@ -1,0 +1,28 @@
+[user]
+	name = d6stiny
+	email = 99969901+d6stiny@users.noreply.github.com
+	signingkey = 97CB16F1F1FF0577
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[commit]
+	gpgsign = true
+[core]
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
+[alias]
+	update = "pull origin master --rebase"
+	fuckme = "switch --orphan"
+	fuckyou = "push --force"
+	status = "status -s"
+[submodule]
+	recurse = true
+[rebase]
+	autoStash = true
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
