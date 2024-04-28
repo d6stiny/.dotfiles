@@ -20,27 +20,21 @@ esac
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export PATH=$PWD/node_modules/.bin:$PATH
-export EDITOR="zed"
 export HOMEBREW_NO_ANALYTICS=1
 
+
+if [[ -n $SSH_CONNECTION ]]; then
+	export EDITOR='vim'
+else 
+	export EDITOR='nvim'
+fi
+
 source ~/.aliases
-
-# Stolen from https://github.com/peppy/dotfiles/blob/e6e807a6fd35720adbdb709a57ef2bb976ef85db/dot_config/private_fish/config.fish#L38
-ssh () {
-	local ps_res
-  	ps_res=$(ps -p $(ps -p $$ -o ppid= | xargs) -o comm=)
-
-  	if [ "$ps_res" = "tmux" ]; then
-		tmux rename-window "ssh:$(echo $argv | cut -d . -f 1)"
-		command ssh $argv
-		tmux set-window-option automatic-rename "on" >/dev/null
-	else
-		command ssh $argv
-	fi
-}
-
 source ~/.secrets
 
 eval "$(starship init zsh)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
