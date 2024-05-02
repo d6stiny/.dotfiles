@@ -11,7 +11,6 @@ brew "fzf"
 brew "gh"
 brew "httpie"
 brew "mas"
-brew "mods"
 brew "neovim"
 brew "nvm"
 brew "ripgrep"
@@ -26,10 +25,8 @@ brew "teamookla/speedtest/speedtest"
 
 cask "1password"
 cask "1password-cli"
-cask "adguard"
 cask "aldente"
 cask "arc"
-cask "cleanmymac"
 cask "discord"
 cask "docker"
 cask "gpg-suite"
@@ -49,3 +46,4 @@ mas "DaVinci Resolve", id: 571213070
 mas "Microsoft Word", id: 462054704
 mas "TestFlight", id: 899247664
 mas "Xcode", id: 497799835
+mas "Parallels Desktop", id: 1085114709
