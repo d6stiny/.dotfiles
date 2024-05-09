@@ -28,22 +28,23 @@ cask "1password-cli"
 cask "aldente"
 cask "arc"
 cask "discord"
-cask "docker"
 cask "gpg-suite"
 cask "kitty"
+cask "lulu"
 cask "obs"
+cask "orbstack"
 cask "raycast"
 cask "steam"
 cask "topnotch"
+cask "whisky"
 
-cask "font-jetbrains-mono"
 cask "font-maple"
+cask "font-jetbrains-mono"
 cask "font-monaspace"
 cask "font-monocraft"
 
 mas "Command X", id: 6448461551
 mas "DaVinci Resolve", id: 571213070
-mas "Microsoft Word", id: 462054704
-mas "TestFlight", id: 899247664
-mas "Xcode", id: 497799835
 mas "Parallels Desktop", id: 1085114709
+mas "Xcode", id: 497799835
+mas "Sketch", id: 1667260533
